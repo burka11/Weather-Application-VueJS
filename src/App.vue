@@ -32,6 +32,7 @@ export default {
   data () {
     return {
       api_key: '11c82e78d96f0c79144231e1ba82c2ef',
+      
       url_base: 'https://api.openweathermap.org/data/2.5/',
       query: '',
       weather: {}
@@ -44,6 +45,7 @@ export default {
           .then(res => {
             return res.json();
           }).then(this.setResults);
+
       }
     },
     setResults (results) {
